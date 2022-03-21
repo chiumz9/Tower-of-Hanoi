@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel='stylesheet' href='style.css'>
+    <meta charset="UTF-8">
+    <title>ToH</title>
+  </head>
+  <header><h1 class='header'>Tower of Hanoi</h1>
+  </header>
+  <body>
+    <div class='container'>
+      <div id='towerOne' class='towers'></div>
+      <div id='towerTwo' class='towers'></div>
+      <div id='towerThree' class='towers'></div>
+    </div>
+    <div class='moveDisplay'>
+      <h3>Number of moves: </h3>
+      <h3 class='counter'></h3>
+      <h3>Seconds: </h3>
+      <h3 class='timerCount'></h3> 
+      <h3>Last round moves: </h3>
+      <h3 class='bestMove'></h3>
+      <h3>Last round time: </h3>
+      <h3 class='bestTime'></h3> 
+    </div>
+    <div class='modal'>
+      <div class='modalContent'>
+        <h2 class='menu'>MENU</h2>
+        <h3>The goal of the puzzle is to move all the disks from the leftmost box to the
+          rightmost box, adhering to the following rules:</h3>
+        <p>
+        1. Click a box to move top disk.<br>
+        2. Move only one disk at a time.<br>
+        3. A larger disk may not be placed on top of a smaller disk.
+        </p>
+        <h3 class='pick'>Select difficulty:</h3>
+        <div class='mode' id='easy'>easy</div>
+        <div class='mode' id='normal'>normal</div>
+        <div class='mode' id='insane'>insane</div>
+      </div>
+    </div>
+    <div class='winModal'>
+      <div class='modalContent'>
+        <h2 class='winner' >Winner!</h2>
+        <div class='moveDisplay'>
+          <h3>Number of moves taken:  </h3>
+          <h2 class='counter'></h2>
+          <h2>Seconds: </h2>
+          <h2 class='timerCount'></h2> 
+        </div>
+        <div class='playAgain'><h2 class='playBtn'>Play Again?</h2></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
